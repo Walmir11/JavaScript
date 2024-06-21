@@ -1,3 +1,5 @@
-const funcoes = require('./aula');
+//const funcoes = require('./aula');
 
-console.log(funcoes)
+const {gets, print} = require('./Funcoes_auxiliares');
+
+print(gets());

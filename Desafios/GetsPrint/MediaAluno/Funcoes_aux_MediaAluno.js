@@ -1,8 +1,7 @@
-
-
+const nota = 5.5
 
 function gets(){
-    return 10;
+    return nota;
 }
 
 function print(texto){
