@@ -1,4 +1,4 @@
-function convertPokemonToLi(pokemon, index) {
+function convertPokemonToLi(pokemon, index=1) {
     return `
         <li class="pokemon">
                     <span class="number">#00${index}</span>
@@ -19,8 +19,15 @@ const pokemonList = document.getElementById("pokemonList");
 
 
 pokeApi.getPokemons().then((pokemons) => {
-    for (let i = 0; i < pokemons.length; i++) {
-        const pokemon = pokemons[i];
-        pokemonList.innerHTML += convertPokemonToLi(pokemon, i + 1);
-    }
+
+    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');;
+
+
+    // for (let i = 0; i < pokemons.length; i++) {
+    //     const pokemon = pokemons[i];
+    //     listItems.push(convertPokemonToLi(pokemon, i + 1));
+
+    // }
+
+    // console.log(listItems)
 })
