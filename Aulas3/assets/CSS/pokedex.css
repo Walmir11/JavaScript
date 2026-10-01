@@ -19,7 +19,7 @@
 .water {
     background-color: #678fee;
 }
-.eletric {
+.electric {
     background-color: #f7cf2e;
 }
 .ice {
@@ -118,6 +118,26 @@
     align-self: flex-end;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    background-color: #6ca7ffd0;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
@@ -132,7 +152,7 @@
 
 @media screen and (min-width: 380px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
