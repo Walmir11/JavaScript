@@ -112,6 +112,16 @@
     text-align: center;
 }
 
+.pokemonDetailButton {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-radius: 1rem;
+}
+
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
