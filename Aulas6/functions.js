@@ -30,3 +30,26 @@ const nameForOtherFunction = function(){
 
 nameForFunction()
 nameForOtherFunction()
+
+console.log('-'.repeat(50))
+
+function funcao1() {
+    console.log(this)
+}
+
+const funcao2 = function () {
+    console.log(this)
+}
+
+const walmir = {
+    name: 'Walmir',
+    funcao1,
+    funcao2
+}
+
+walmir.funcao1()
+walmir.funcao2()
+
+
+console.log('-'.repeat(50))
+
