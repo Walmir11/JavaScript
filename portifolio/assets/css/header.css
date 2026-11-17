@@ -17,3 +17,23 @@
     font-family: 'Neue Machina';
     text-align: center;
 }
+
+.information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.information p {
+    margin: 0.5rem;
+}
+
+.information p::before {
+    content: "•";
+    width: 24px;
+    height: 24px;
+    background-image: url('/portifolio/assets/img/icons/job.svg');
+}

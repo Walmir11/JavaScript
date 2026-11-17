@@ -12,6 +12,9 @@
 
 .main {
     padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
 }
 
 body {
